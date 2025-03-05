@@ -1,6 +1,4 @@
-// import { menus } from './hooks';
-
-// const packages = require('../packages/hooks/package.json');
+import { menus } from './hooks';
 
 export default {
   exportStatic: {},
@@ -20,14 +18,14 @@ export default {
     ],
   ],
   mode: 'site',
-  title: 'encode react hooks',
+  title: 'react hooks',
   favicon: '/avatar.jpeg',
   logo: '/avatar.jpeg',
   dynamicImport: {},
   manifest: {},
   hash: true,
   alias: {
-    encodeHooks: process.cwd() + '/packages/hooks/src/index.ts',
+    rhooks: process.cwd() + '/packages/hooks/src/index.ts',
   },
   resolve: {
     includes: ['docs', 'packages/hooks/src'],
@@ -56,6 +54,6 @@ export default {
         path: '/guide',
       },
     ],
-    // '/hooks': menus,
+    '/hooks': menus,
   },
 };
