@@ -12,7 +12,7 @@
     "clean": "pnpm run clean-dist && rimraf node_modules",
     "dev": "set NODE_OPTIONS=--openssl-legacy-provider && dumi dev",
     "build": "pnpm -r --filter=./packages/* run build",
-    "build:doc": "dumi build",
+    "build:doc": "set NODE_OPTIONS=--openssl-legacy-provider && dumi build",
     "test": "jest",
     "coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "pub": "pnpm run build && pnpm -r --filter=./packages/* publish",
